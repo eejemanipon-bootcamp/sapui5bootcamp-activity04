@@ -21,18 +21,21 @@ sap.ui.define([
             var oCardNumberInput = this.getView().byId("idInputCardNumber");
 
             if (sSelectedKey === "GCASH"){
-                // show the mobile field
+                //Show the mobile fields
                 oMobileLabel.setVisible(true);
                 oMobileInput.setVisible(true);
+                //Hide the card number fields
                 oCardNumberLabel.setVisible(false);
                 oCardNumberInput.setVisible(false);
             } else if (sSelectedKey === "CC"){
-                // show the card number field
+                //Show the card number fields
                 oCardNumberLabel.setVisible(true);
                 oCardNumberInput.setVisible(true);
+                //Hide the mobile fields
                 oMobileLabel.setVisible(false);
                 oMobileInput.setVisible(false);
             } else {
+                //Hide any other fields.
                 oMobileLabel.setVisible(false);
                 oMobileInput.setVisible(false);
                 oCardNumberLabel.setVisible(false);
@@ -45,7 +48,7 @@ sap.ui.define([
             var oInputFNameValue = this.getView().byId("idInptFName").getValue();
             var oInputLNameValue = this.getView().byId("idInptLName").getValue(); //Added
 
-            // Check if first name is blank
+            //Check if first name is blank
             if (oInputFNameValue === "" || oInputLNameValue === ""){
                 sap.m.MessageToast.show("Required Field is blank"); 
             }
