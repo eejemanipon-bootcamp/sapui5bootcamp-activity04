@@ -22,7 +22,10 @@
 View and Controller Exercise
 
 ## Output  
-![Alt text](resources/activity-04-output.png)
+### Main View  
+![Alt text](resources/activity-04-output.png)  
+### Review Page  
+![Alt text](resources/activity-06-output.png)
 
 ### Starting the generated app
 

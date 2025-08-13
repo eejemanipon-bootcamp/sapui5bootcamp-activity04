@@ -79,12 +79,21 @@
           "target": [
             "mainView"
           ]
+        },
+        {
+          "name": "ReviewPage",
+          "pattern": "Review/{firstName}",
+          "target": ["reviewPage"]
         }
       ],
       "targets": {
         "mainView": {
           "id": "MainView",
           "name": "MainView"
+        },
+        "reviewPage": {
+          "id": "ReviewPage",
+          "name": "ReviewPage"
         }
       }
     },
